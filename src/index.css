@@ -16,9 +16,16 @@ h1{
 }
 .inner-container{
   width: 450px;
-  height: 290px;
+  height: 250px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: larger;
+  font-weight: 700;
+  padding: 2rem;
 }
 .generate{
   width: 200px;
@@ -33,4 +40,23 @@ h1{
 }
 .generate:hover{
   background-color: rgb(33, 31, 31);
+}
+@media only screen and (max-width: 600px) {
+  .inner-container{
+    width: 315px;
+    height: 290px;
+    margin-top: 4rem;
+    font-size: larger;
+    font-weight: 600;
+    padding: 1.5rem;
+  }
+  .container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .generate{
+    width: 290px;
+    padding: 1.2rem;
+  }
 }

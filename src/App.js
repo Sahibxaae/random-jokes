@@ -2,10 +2,8 @@ import RandomJoke from "./RandomJoke";
 
 function App() {
   return (
-    <div className="container">
-      <h1>Random jokes</h1>
+    <div>
       <RandomJoke />
-      <button className="generate">Generate</button>
     </div>
   );
 }
